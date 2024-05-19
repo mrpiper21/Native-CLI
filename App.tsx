@@ -37,21 +37,7 @@ function App(): React.JSX.Element {
     flex: 1,
   };
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View>
-          <LoginScreen />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+  return <LoginScreen />;
 }
 
 const styles = StyleSheet.create({
@@ -74,3 +60,19 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+// return (
+//   <SafeAreaView style={backgroundStyle}>
+//     <StatusBar
+//       barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+//       backgroundColor={backgroundStyle.backgroundColor}
+//     />
+//     <ScrollView
+//       contentInsetAdjustmentBehavior="automatic"
+//       style={backgroundStyle}>
+//       <View>
+//         <LoginScreen />
+//       </View>
+//     </ScrollView>
+//   </SafeAreaView>
+// );
